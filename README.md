@@ -4,6 +4,16 @@
 
 许可：[Apache License 2.0](LICENSE)
 
+[官方网站](https://www.jcodesoft.com) · [Web 前端](https://gitee.com/program_cat/ai2-base-web) · [后端服务](https://gitee.com/program_cat/ai2-base-api)
+
+| 组成 | 仓库 | 技术栈 | 说明 |
+| --- | --- | --- | --- |
+| Web 前端 | [AI2BaseWeb](https://gitee.com/program_cat/ai2-base-web) | Vue 3 / Vite / TS | PC 端管理界面 |
+| 后端服务 | [AI2BaseApi](https://gitee.com/program_cat/ai2-base-api) | .NET 10 / ASP.NET Core | API 宿主、ORM、权限、缓存、任务调度 |
+| 移动端 | 当前仓库 | uni-app / Vue 3 | 同一套表单渲染到小程序 / App / 鸿蒙 |
+
+> 官网与产品介绍：**<https://www.jcodesoft.com>**
+
 ---
 
 ## 一、环境要求
