@@ -134,7 +134,26 @@ npm ci
 
 ---
 
-## 八、开源协议
+## 八、社区交流
+
+扫码加入 QQ 交流群，或添加微信联系作者（请注明来意）：
+
+<table>
+  <tr>
+    <td align="center">
+      <b>QQ 交流群 · 1132049639</b><br>
+      <img src="docs/images/qq-group-qr.png" width="220" alt="QQ 交流群二维码">
+    </td>
+    <td align="center">
+      <b>微信 · tobin</b><br>
+      <img src="docs/images/wechat-qr.png" width="220" alt="微信二维码">
+    </td>
+  </tr>
+</table>
+
+---
+
+## 九、开源协议
 
 本项目基于 **Apache License 2.0** 开源，版权归苏州极简搭信息技术有限公司所有，许可证全文见根目录 [LICENSE](LICENSE)。
 
