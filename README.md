@@ -80,8 +80,6 @@ uni-app-v3/
 ├── main.js / App.vue      入口
 ├── pages/                 主包页面（首页、登录、消息、工作流等）
 ├── pagesMy/               「我的」分包
-├── pagesDemo/             示例功能分包
-├── pagesTest/ pagesTest1/ 开发自测页面，可在 pages.json 中移除注册后删除
 ├── components/            自定义组件（jcode-mpui 为 UI 组件库）
 ├── hooks/ utils/ common/  逻辑与工具
 ├── static/ res/           静态资源、图标、启动图
@@ -122,7 +120,6 @@ npm ci
 ## 七、其他说明
 
 - 图标与启动图在 `res/icons/` 和 `res/startup/`，路径已在 `manifest.json` 中配好，替换同名文件即可。
-- `pagesDemo/` 是功能示例，可按需保留或删除。删除页面时记得同步删除 `pages.json` 中对应的分包注册。
 - 本项目支持编译到 H5、微信小程序、支付宝小程序、钉钉小程序、App（Android/iOS）与 HarmonyOS。
 
 ---

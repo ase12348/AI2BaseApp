@@ -149,46 +149,6 @@
           }
         }
       ]
-    },
-    {
-      "root": "pagesDemo",
-      "pages": [
-        {
-          "path": "clock/index",
-          "style": {
-            "navigationBarTitleText": "考勤打卡",
-            "enablePullDownRefresh": false
-          }
-        },
-        {
-          "path": "clock/setting",
-          "style": {
-            "navigationBarTitleText": "考勤设置",
-            "enablePullDownRefresh": true
-          }
-        },
-        {
-          "path": "clock/addSetting",
-          "style": {
-            "navigationBarTitleText": "添加考勤组",
-            "enablePullDownRefresh": false
-          }
-        },
-        {
-          "path": "clock/selectTime",
-          "style": {
-            "navigationBarTitleText": "班次时间",
-            "enablePullDownRefresh": false
-          }
-        },
-        {
-          "path": "clock/selectScope",
-          "style": {
-            "navigationBarTitleText": "考勤范围",
-            "enablePullDownRefresh": false
-          }
-        }
-      ]
     }
   ],
   "preloadRule": {
