@@ -1,0 +1,44 @@
+uni-button,button{
+	line-height:normal !important;
+	height: 36px;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+}
+
+uni-button[size=mini],button[size=mini] {
+	font-size: 14px;
+	height: 32px;
+}
+
+button[type=primary] {
+    background-color: $uni-primary;
+    color: #fff;
+}
+
+.uni-card{
+  margin-top: 0 !important;
+	padding: 0 8px !important;
+	border-radius:8px !important;
+	.uni-card__header{
+		padding: 8px !important;
+	}
+	
+	.uni-card__header-content .uni-card__header-content-title{
+		font-size: 14px;
+	}
+}
+.uni-forms-item__box{
+	padding-bottom: 8px !important;
+}
+.uni-forms-item__inner{
+	padding-bottom: 0 !important;
+}
+.uni-error-message{
+	position: relative !important;
+}
+
+.is-input-error-border .uni-easyinput__placeholder-class{
+	color: #999 !important;
+}

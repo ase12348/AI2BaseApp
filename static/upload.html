@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+			<meta charset="UTF-8">
+			<title>图片上传</title>
+			<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js"></script>
+	</head>
+	<body>
+		<div class="upload_box">
+			<form id="form1" action="https://" target="frame1" method="post" enctype="multipart/form-data">
+				<input type="file" name="file" class="avatval" placeholder="请选择文件···" />
+				<input type="button" value="上传" onclick="upload()" class="button-selectimg" />
+			</form>
+			<iframe name="frame1" frameborder="0" height="40"></iframe>
+		</div>
+		
+		<!-- 其实我们可以把iframe标签隐藏掉 -->
+		<script type="text/javascript">
+			function upload() {
+				$("#form1").submit();
+				var t = setInterval(function() {
+					//获取iframe标签里body元素里的文字。即服务器响应过来的"上传成功"或"上传失败"
+					var word = $("iframe[name='frame1']").contents().find("body").text();
+					if(word != "") {}
+				}, 1000);
+			}
+			
+			// 接收传参数据
+			const url = decodeURI(decodeURI(window.location.href))
+			console.log("解析传参",getQuery(url));
+			function getQuery(url) {
+				console.log("传入参数",url);
+				// 分割
+				var str = url.split('?')[1];
+				var keys = str.split('&');
+				var obj = {};
+				keys.forEach((item, idx, data)=>{
+					var arr = item.split('=');
+					obj[arr[0]] = arr[1];
+				});
+				return obj;
+			}
+		</script>
+		
+		<style>
+			.upload_box{
+				width: 380px;
+				height: 30px;
+				/* background: #55557f; */
+				margin: auto;
+			}
+			.button-selectimg {
+                color: #00A2D4;
+                padding: 4px 6px;
+                border: 1px dashed #00A2D4;
+                border-radius: 2px;
+                text-decoration: none;
+            }
+			.avatval {
+                padding: 3px 6px;
+                padding-left: 10px;
+                border: 1px solid #E7EAEC;
+                width: 280px;
+                height: 25px;
+                line-height: 25px;
+                border-left: 3px solid #3FB7EB;
+                background: #FAFAFB;
+                border-radius: 2px;
+            }
+		</style>
+		
+	</body>
+</html>

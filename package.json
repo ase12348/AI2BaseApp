@@ -1,0 +1,28 @@
+{
+  "name": "jcode-mobile-v3",
+  "version": "3.3.0",
+  "description": "极简搭AI应用开发基座移动端 - Vue3 + Vite 迁移版（支持 HarmonyOS）",
+  "license": "Apache-2.0",
+  "main": "main.js",
+  "scripts": {},
+  "dependencies": {
+    "@uni-plugs/uni-code": "1.0.4",
+    "vue": "^3.4.21",
+    "moment": "^2.24.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {},
+  "uni-app": {
+    "scripts": {
+      "mp-dingtalk": {
+        "title": "钉钉小程序",
+        "env": {
+          "UNI_PLATFORM": "mp-alipay"
+        },
+        "define": {
+          "MP-DINGTALK": true
+        }
+      }
+    }
+  }
+}

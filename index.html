@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Vite/H5 视口适配（保留原逻辑） -->
+    <script>
+      var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+        CSS.supports('top: constant(a)'))
+      document.write(
+        '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+        (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+    </script>
+    <link rel="shortcut icon" type="image" href="/static/logo.png">
+    <title>极简搭AI应用开发基座</title>
+    <!--preload-links-->
+    <!--app-context-->
+  </head>
+  <body>
+    <div id="app"><!--app-html--></div>
+    <script type="module" src="/main.js"></script>
+    <!-- 富文本编辑器依赖（quill）：保持与 Vue2 版一致的全局引入方式 -->
+    <script src="/static/editor/quill.min.js"></script>
+    <script src="/static/editor/image-resize.min.js"></script>
+  </body>
+</html>

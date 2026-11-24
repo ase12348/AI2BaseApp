@@ -1,0 +1,165 @@
+// 隐藏scroll-view的滚动条
+::-webkit-scrollbar {
+    display: none;  
+    width: 0 !important;  
+    height: 0 !important;  
+    -webkit-appearance: none;  
+    background: transparent;  
+}
+
+/*
+*通用样式库
+*/
+.page{
+	position: relative;
+	width: 100vw;
+	//min-height: 100vh;
+	//min-height: calc(100vh - var(--window-top) - var(--window-bottom)) ios 上准;
+	background-color: $uni-bg-color;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+.fixed{
+	position: fixed;
+	width: 100%;
+	top: var(--window-top);
+	z-index: 50;
+	/* #ifndef APP-PLUS */
+	box-sizing: border-box;
+	/* #endif */
+}
+
+.bg-white{
+	background-color: #fff;
+}
+
+.text-center{
+	text-align: center;
+}
+
+
+/*  -- 内外边距 -- */
+.margin {
+  margin: 16px;
+}
+
+.margin-top {
+  margin-top: 16px;
+}
+
+.margin-right {
+  margin-right: 16px;
+}
+
+.margin-bottom {
+  margin-bottom: 16px;
+}
+
+.margin-left {
+  margin-left: 16px;
+}
+
+.margin-lr {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.margin-tb {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.padding {
+  padding: 16px;
+}
+
+.padding-top {
+  padding-top: 16px;
+}
+
+.padding-top-win{
+	padding-top: var(--window-top);
+}
+
+.padding-right {
+  padding-right: 16px;
+}
+
+.padding-bottom {
+  padding-bottom: 16px;
+}
+
+.padding-left {
+  padding-left: 16px;
+}
+
+.padding-lr {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.padding-tb {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.ab-tr{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.ab-right{
+	position: absolute;
+	right: 0;
+}
+
+
+.jcode-forms-list{
+	.uni-list-item__container{
+		padding: 4px 0 !important;
+		padding-left: 15px !important;
+		width: 100%;
+		display: block !important;;
+	}
+	.uni-forms-item__box {
+	    padding-bottom: 0 !important;
+	}
+	.uni-easyinput__content{
+		width: 100%;
+	}
+	.uni-input-input{
+		text-align: right;	
+		font-size: 14px;
+	}
+	.uni-easyinput__placeholder-class{
+		font-size: 14px !important;
+	}
+	.uni-easyinput__content-input{
+		padding-right: 4px;
+	}
+	
+	.uni-forms-item__label .label-text{
+		font-size: 16px !important;
+		color: #333 !important;
+	}
+	
+	.jcode-input{
+		text-align: right;	
+		font-size: 14px;
+		padding-left: 0;
+	}
+	
+	.jcode-input-border{
+		border: 0;
+	}
+	
+	.jcode-input-icon-right-bottom{
+		display: none;
+	}
+	.jcode-input__content{
+		padding-right: 4px;
+	}
+
+}
+
+

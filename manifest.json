@@ -1,0 +1,217 @@
+{
+    "name" : "极简搭AI应用开发基座移动端",
+    "appid" : "__UNI__2F30D29",
+    "description" : "极简搭AI应用开发基座移动端",
+    "versionName" : "3.3.0",
+    "versionCode" : "30300",
+    "transformPx" : false,
+    "app-plus" : {
+        "usingComponents" : true,
+        "softinputNavBar" : "none",
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : false,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {
+            "Webview-x5" : {}
+        },
+        "distribute" : {
+            "android" : {
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ]
+            },
+            "ios" : {
+                "privacyDescription" : {
+                    "NSPhotoLibraryUsageDescription" : "工作流程中需要相册权限以选择并上传图片",
+                    "NSPhotoLibraryAddUsageDescription" : "将图片保存到本机",
+                    "NSCameraUsageDescription" : "工作流程中需要相机权限以选择并上传图片"
+                },
+                "idfa" : false
+            },
+            "sdkConfigs" : {
+                "ad" : {},
+                "push" : {},
+                "maps" : {},
+                "payment" : {},
+                "oauth" : {}
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "res/icons/72x72.png",
+                    "xhdpi" : "res/icons/96x96.png",
+                    "xxhdpi" : "res/icons/144x144.png",
+                    "xxxhdpi" : "res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "",
+                    "ipad" : {
+                        "app" : "res/icons/76x76.png",
+                        "app@2x" : "res/icons/152x152.png",
+                        "notification" : "res/icons/20x20.png",
+                        "notification@2x" : "res/icons/40x40.png",
+                        "proapp@2x" : "res/icons/167x167.png",
+                        "settings" : "res/icons/29x29.png",
+                        "settings@2x" : "res/icons/58x58.png",
+                        "spotlight" : "res/icons/40x40.png",
+                        "spotlight@2x" : "res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "res/icons/120x120.png",
+                        "app@3x" : "res/icons/180x180.png",
+                        "notification@2x" : "res/icons/40x40.png",
+                        "notification@3x" : "res/icons/60x60.png",
+                        "settings@2x" : "res/icons/58x58.png",
+                        "settings@3x" : "res/icons/87x87.png",
+                        "spotlight@2x" : "res/icons/80x80.png",
+                        "spotlight@3x" : "res/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "android" : {
+                    "xxhdpi" : "res/startup/startup.9.png",
+                    "xhdpi" : "res/startup/startup.9.png",
+                    "hdpi" : "res/startup/startup.9.png"
+                },
+                "ios" : {
+                    "iphone" : {
+                        "portrait-896h@3x" : "res/startup/startup-ios-x.png",
+                        "portrait-896h@2x" : "res/startup/startup-ios-x.png",
+                        "iphonex" : "res/startup/startup-ios-x.png",
+                        "retina55" : "res/startup/startup-ios-16-9.png",
+                        "retina47" : "res/startup/startup-ios-16-9.png",
+                        "retina40" : "res/startup/startup-ios-3-2.png",
+                        "retina35" : "res/startup/startup-ios-3-2.png"
+                    }
+                }
+            }
+        },
+        "uniStatistics" : {
+            "enable" : false
+        },
+        "nvueLaunchMode" : "fast"
+    },
+    "quickapp" : {},
+    "mp-weixin" : {
+        "appid" : "wxfe3b639e1f2dcd19",
+        "setting" : {
+            "urlCheck" : false,
+            "es6" : false,
+            "postcss" : false,
+            "minified" : true
+        },
+        "usingComponents" : true,
+        "optimization" : {
+            "subPackages" : true
+        },
+        "uniStatistics" : {
+            "enable" : false
+        },
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "使用地图需要您的授权"
+            }
+        },
+        "requiredPrivateInfos" : [ "chooseLocation" ]
+    },
+    "mp-alipay" : {
+        "usingComponents" : true,
+        "component2" : true,
+        "enableParallelLoader" : true,
+        "uniStatistics" : {
+            "enable" : false
+        },
+        "appid" : "2021001143693703"
+    },
+    "mp-dingtalk" : {
+        "usingComponents" : true,
+        "component2" : true,
+        "enableParallelLoader" : true,
+        "uniStatistics" : {
+            "enable" : false
+        },
+        "appid" : "dingoaj8tdyyjkj2wv1d62"
+    },
+    "mp-baidu" : {
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "h5" : {
+        "uniStatistics" : {
+            "enable" : false
+        },
+        "router" : {
+            "mode" : "hash",
+            "base" : "/webapp/"
+        },
+        "title" : "极简搭AI应用开发基座",
+        "template" : "index.html",
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : false
+            }
+        },
+        "sdkConfigs" : {
+            "maps" : {
+                "qqmap" : {
+                    "key" : "XZWBZ-JGFC3-2IS3K-YFWJ6-LAWIF-SBBTZ"
+                }
+            }
+        },
+        "devServer" : {
+            "https" : false
+        }
+    },
+    "mp-qq" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "harmony" : {
+        "packageName" : "com.jcode.harmonytest",
+        "versionName" : "3.3.0",
+        "versionCode" : 30300,
+        "minSdkVersion" : 23,
+        "targetSdkVersion" : 23,
+        "icon" : "/static/logo.png",
+        "label" : "极简搭AI应用开发基座移动端"
+    },
+    "vueVersion" : "3"
+}

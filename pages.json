@@ -1,0 +1,256 @@
+{
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "navigationBarBackgroundColor": "#0c86d8",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#f3f3f3",
+        "backgroundColorTop": "#0c86d8",
+        "backgroundColorBottom": "#f3f3f3"
+      }
+    },
+    {
+      "path": "pages/home",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/home/more",
+      "style": {
+        "navigationBarTitleText": "更多应用"
+      }
+    },
+    {
+      "path": "pages/login",
+      "style": {
+        "navigationStyle": "custom",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/msg",
+      "style": {
+        "navigationBarTitleText": "消息",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/msg/chat",
+      "style": {
+        "navigationBarTitleText": "对话列表",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/contact",
+      "style": {
+        "navigationBarTitleText": "通讯录",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/my",
+      "style": {
+        "navigationBarBackgroundColor": "#0c86d8",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "我的",
+        "backgroundColorTop": "#0c86d8",
+        "backgroundColorBottom": "#f3f3f3"
+      }
+    },
+    {
+      "path": "pages/more",
+      "style": {
+        "navigationBarTitleText": "应用",
+        "enablePullDownRefresh": true
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/common",
+      "pages": [
+        {
+          "path": "jcode-user-picker",
+          "style": {
+            "navigationBarTitleText": "选择用户",
+            "enablePullDownRefresh": true
+          }
+        },
+        {
+          "path": "jcode-icon-picker",
+          "style": {
+            "navigationBarTitleText": "图标选择"
+          }
+        },
+        {
+          "path": "jcode-layer-picker",
+          "style": {
+            "navigationBarTitleText": "选择一个选项",
+            "enablePullDownRefresh": true
+          }
+        },
+        {
+          "path": "jcode-editor-picker",
+          "style": {
+            "navigationBarTitleText": "编辑文本"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pagesMy",
+      "pages": [
+        {
+          "path": "info",
+          "style": {
+            "navigationBarTitleText": "我的信息"
+          }
+        },
+        {
+          "path": "contact",
+          "style": {
+            "navigationBarTitleText": "我的联系方式"
+          }
+        },
+        {
+          "path": "qrcode",
+          "style": {
+            "navigationBarTitleText": "我的二维码"
+          }
+        },
+        {
+          "path": "password",
+          "style": {
+            "navigationBarTitleText": "更改密码"
+          }
+        },
+        {
+          "path": "jcode",
+          "style": {
+            "navigationBarTitleText": "关于极简搭",
+            "navigationBarBackgroundColor": "#0c86d8",
+            "navigationBarTextStyle": "white",
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "path": "framework",
+          "style": {
+            "navigationBarTitleText": "极简搭AI应用开发基座",
+            "navigationBarBackgroundColor": "#0c86d8",
+            "pageOrientation": "portrait",
+            "navigationBarTextStyle": "white",
+            "backgroundColor": "#FFFFFF"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pagesDemo",
+      "pages": [
+        {
+          "path": "clock/index",
+          "style": {
+            "navigationBarTitleText": "考勤打卡",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "clock/setting",
+          "style": {
+            "navigationBarTitleText": "考勤设置",
+            "enablePullDownRefresh": true
+          }
+        },
+        {
+          "path": "clock/addSetting",
+          "style": {
+            "navigationBarTitleText": "添加考勤组",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "clock/selectTime",
+          "style": {
+            "navigationBarTitleText": "班次时间",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "clock/selectScope",
+          "style": {
+            "navigationBarTitleText": "考勤范围",
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/my": {
+      "network": "all",
+      "packages": [
+        "pagesMy"
+      ]
+    }
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "navigationBarBackgroundColor": "#FFF",
+    "backgroundColor": "#f3f3f3",
+    "navigationBarTitleText": "极简搭AI应用开发基座",
+    "mp-alipay": {
+      "allowsBounceVertical": "NO"
+    }
+  },
+  "tabBar": {
+    "color": "#8c8c8c",
+    "selectedColor": "#3398DC",
+    "borderStyle": "black",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "static/img-bar/tab-home.png",
+        "selectedIconPath": "static/img-bar/tab-home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/more",
+        "iconPath": "static/img-bar/tab-application.png",
+        "selectedIconPath": "static/img-bar/tab-application-active.png",
+        "text": "应用"
+      },
+      {
+        "pagePath": "pages/msg",
+        "iconPath": "static/img-bar/tab-msg.png",
+        "selectedIconPath": "static/img-bar/tab-msg-active.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/contact",
+        "iconPath": "static/img-bar/tab-contact.png",
+        "selectedIconPath": "static/img-bar/tab-contact-active.png",
+        "text": "通讯录"
+      },
+      {
+        "pagePath": "pages/my",
+        "iconPath": "static/img-bar/tab-my.png",
+        "selectedIconPath": "static/img-bar/tab-my-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "easycom": {
+    "custom": {
+      "^jcode-(.*)": "@/components/jcode-mpui/$1.vue",
+      "tki-qrcode": "@/components/tki-qrcode/tki-qrcode.vue"
+    }
+  }
+}
