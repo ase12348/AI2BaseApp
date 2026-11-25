@@ -37,9 +37,6 @@ export default {
 	// 地图相关
 	"mapKey":'XZWBZ-JGFC3-2IS3K-YFWJ6-LAWIF-SBBTZ',
 	
-	// 租户相关配置
-	"isTenant":true, // 开启租户功能
-
 	// 小程序绑定登录等配置（login=登录，bind=绑定，unbind=解绑）
 	"miniProgramAccount": {
 		// 微信小程序 

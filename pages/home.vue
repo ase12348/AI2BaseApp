@@ -81,7 +81,6 @@ import {
   LOADING,
   MP_SHARE_DECODE,
   NAV_TO,
-  ON,
   RELAUNCH_TO,
   SCREENHEIGHT,
   SET_GLOBAL,
@@ -115,15 +114,6 @@ const init = async function (param) {
 
   // 加载页面数据
   await refresh();
-
-  // 监听「我的应用」列表修改
-  ON('home-list-change', () => {
-    HTTP_GET({
-      url: '/mapp/module/mylist',
-    }).then((newList) => {
-      initModule(GET_GLOBAL('jcode_modules'), newList);
-    });
-  });
 
   SET_STORAGE('nextTime', null);
 
@@ -169,13 +159,11 @@ const refresh = async function () {
   HIDE_LOADING();
 };
 const fetchModules = async function () {
-  const [modules, myModuleIds] = await Promise.all([
-    HTTP_GET({ url: '/mapp/modules' }), // 功能模块数据
-    HTTP_GET({ url: '/mapp/module/mylist' }), // 我的功能模块信息
-  ]);
-  initModule(modules, myModuleIds);
+  // 已取消「我的应用」个性化列表，首页宫格直接展示全部移动端功能
+  const modules = await HTTP_GET({ url: '/mapp/modules' }); // 功能模块数据
+  initModule(modules);
 };
-const initModule = function (modules, myModuleIds) {
+const initModule = function (modules) {
   const loginUser = GET_GLOBAL('loginUser');
   // 功能区按钮需要处理 icon
   const myModules = [];
@@ -193,14 +181,7 @@ const initModule = function (modules, myModuleIds) {
   });
   SET_GLOBAL('jcode_modules', myModules);
 
-  myModuleIds = myModuleIds || [];
-  myModuleApps.value = [];
-  for (let id of myModuleIds) {
-    const item = myModules.find((t) => t.f_Id == id && t.f_IsSystem != 3);
-    if (item) {
-      myModuleApps.value.push(item);
-    }
-  }
+  myModuleApps.value = myModules.filter((t) => t.f_IsSystem != 3);
 };
 const funcListClick = function (e) {
   if (e.detail.index == 100) {

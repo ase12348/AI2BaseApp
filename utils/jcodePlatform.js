@@ -57,10 +57,9 @@ export async function PAGE_LAUNCH(isLayer) {
       }
     }
 
-    // 同时发出请求，获取所有功能按钮、我的列表、数据字典中的功能名称表
+    // 同时发出请求，获取所有功能按钮、数据字典中的功能名称表
     const [modules] = await Promise.all([
       HTTP_GET({ url: "/mapp/modules" }),
-      HTTP_GET({ url: "/mapp/module/mylist" }),
       FETCH_DATAITEM("function").then((result) =>
         mapValues(keyBy(values(result), "f_ItemValue"), "f_ItemName")
       ),

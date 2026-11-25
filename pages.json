@@ -68,6 +68,12 @@
         "navigationBarTitleText": "应用",
         "enablePullDownRefresh": true
       }
+    },
+    {
+      "path": "pages/demo/list",
+      "style": {
+        "navigationBarTitleText": "移动端演示"
+      }
     }
   ],
   "subPackages": [

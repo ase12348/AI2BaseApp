@@ -53,7 +53,6 @@
 | `mapKey` | 腾讯位置服务 Key，需自行申请 | **必须** |
 | `appVersion` | 应用版本号，仅用于界面展示 | 可选 |
 | `enableSignUp` | 是否允许用户自助注册 | 视需求 |
-| `isTenant` | 是否开启多租户 | 视后端 |
 | `devAccount` | 仅在开发环境登录页自动填充账号密码，生产包不生效 | 建议清空 |
 | `language` | 界面语言 | 可选 |
 | `miniProgramAccount` | 各小程序的登录/绑定开关，数组元素为 `login` / `bind` / `unbind` | 视需求 |

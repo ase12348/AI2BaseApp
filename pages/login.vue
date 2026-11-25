@@ -53,7 +53,7 @@
         <uni-easyinput
           trim
           v-model="username"
-          :placeholder="isTenant ? $t('请输入租户号@账号') : $t('请输入账号')"
+          :placeholder="$t('请输入账号')"
           prefixIcon="person"
           :inputBorder="false"
         ></uni-easyinput>
@@ -167,10 +167,6 @@ const MPLogin = computed(function () {
     'login',
   );
 });
-const isTenant = computed(function () {
-  return JCODE_CONFIG('isTenant');
-});
-
 const apiPicker = ref(null);
 const langTypePicker = ref(null);
 
@@ -232,17 +228,10 @@ const login = async function (type) {
   // 不是小程序，则提交用户名、密码登录
   // 是小程序，则申请授权码登录
   if (!type) {
-    let _username = username__local2;
-    const usernameList = username__local2.split('@');
-    let tenantNo = '';
-    if (usernameList.length == 2) {
-      _username = usernameList[1];
-      tenantNo = usernameList[0];
-    }
+    const _username = username__local2;
     res = await HTTP_POST({
       url: '/login',
       data: { account: _username, password: MD5(password__local3) },
-      params: { tenantNo },
       errorTips: '登录时发生错误',
     });
   } else {
@@ -258,7 +247,6 @@ const login = async function (type) {
     res = await HTTP_POST({
       url: '/login/openid',
       params: { code, type },
-      //params:{tenantNo},
       errorTips: '登录时发生错误',
     });
   }
